@@ -1,0 +1,11 @@
+# Repository: PyNetConnect
+
+import requests
+
+response = requests.get('https://api.openai.com')
+status_code = response.status_code
+
+if status_code == 200:
+    print("Connection successful!")
+else:
+    print(f"Connection failed with status code: {status_code}")
